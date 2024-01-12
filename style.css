@@ -21,6 +21,15 @@
     max-width: 75%;
     margin: 0 auto;
 }
+
+p{
+    color: var(--Dark-03);
+    line-height: 1.625rem;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+
 .btn-primary {
     border-radius: 0.5rem;
     background: #FF900E;
@@ -82,13 +91,7 @@ nav{
     font-size: 4rem;
     font-weight: 700;
 }
-.banner p, p{
-    color: var(--Dark-03);
-    line-height: 1.625rem;
-    font-weight: 400;
-    font-size: 1rem;
-    margin-top: 1.5rem;
-}
+
 
 .banner-img img{
     width: 100%;
@@ -105,6 +108,7 @@ nav{
     align-items: center;
     gap: 4.5rem;
     height: auto;
+    margin-bottom: 9rem;
 }
 .img-grid{
     display: grid;
@@ -145,11 +149,6 @@ h1 .feat{
 
 
 
-/* Tablet Device Responsiveness */
-
-@media (768px < width <=1070px) {
-
-}
 
 
 /* Mobile Device Responsive */
@@ -180,6 +179,15 @@ h1 .feat{
         margin-top: 2rem;
     }
 
+    .features, .img-grid{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Tablet Device Responsiveness */
+
+@media (768px < width <=1070px) {
     .features{
         display: flex;
         flex-direction: column;
