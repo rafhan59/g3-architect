@@ -18,7 +18,7 @@
     color: var(--Dark-01);
 }
 .container {
-    width: 75%;
+    max-width: 75%;
     margin: 0 auto;
 }
 .btn-primary {
@@ -54,7 +54,8 @@ nav{
     align-items: center;
 }
 
-.brand h1{
+.brand .h1{
+    text-decoration: none;
     font-size: 2.8125rem;
     font-weight: 700;
 }
@@ -81,7 +82,7 @@ nav{
     font-size: 4rem;
     font-weight: 700;
 }
-.banner p{
+.banner p, p{
     color: var(--Dark-03);
     line-height: 1.625rem;
     font-weight: 400;
@@ -96,26 +97,91 @@ nav{
 }
 
 
+/* FEATURES SECTION OF MAIN MENU  */
+
+.features{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4.5rem;
+    height: auto;
+}
+.img-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.img-grid img{
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    margin-bottom: 1.5rem;
+}
+h1 .quick{
+    font-size: 2.8125rem;
+    color: var(--Dark-03);
+    font-weight: 500;
+}
+
+h1 .our{
+    font-size: 2.8125rem;
+    color: var(--Dark-01);
+    font-weight: 700;
+}
+h1 .feat{
+    font-size: 2.8125rem;
+    color: #FF900E;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
 
 /* Tablet Device Responsiveness */
 
-@media (576px < width <=1070px) {
+@media (768px < width <=1070px) {
 
 }
 
 
 /* Mobile Device Responsive */
 
-@media (width <=576px) {
+@media (width <=768px) {
     nav{
         padding-top: 1.5rem;
         display: flex;
         flex-direction: column;
     }
-
+    .brand > a{
+        text-align: center;
+    }
     .menu > ul{
         flex-direction: column;
         text-align: center;
         padding-top: 1rem;
+    }
+    .banner h1{
+        font-size: 2rem;
+    }
+    .banner p{
+        font-size: 0.5rem;
+    }
+    .btn-primary{
+        font-size: 0.75rem;
+        padding: 0.625rem 0.75rem;
+        margin-top: 2rem;
+    }
+
+    .features{
+        display: flex;
+        flex-direction: column;
     }
 }
