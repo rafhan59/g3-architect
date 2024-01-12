@@ -47,7 +47,11 @@ p{
 .center{
     text-align: center;
 }
-
+.heading {
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
 /* HEADER SECTION CSS */
 
 header{
@@ -142,8 +146,32 @@ h1 .feat{
     font-weight: 700;
 }
 
+/* SOME FACTS SECTION  */
+
+.cards{
+    margin-top: 6.25rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+.card{
+    border-radius: .5rem;
+    border: 1px solid #FF900E;
+    padding: 2rem 1rem;
+}
 
 
+.card h3{
+    font-size: 3.125rem;
+    font-weight: 600;
+    color: var(--Dark-02);
+}
+.card p{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--Dark-03);
+    margin: 0;
+}
 
 
 
@@ -179,7 +207,7 @@ h1 .feat{
         margin-top: 2rem;
     }
 
-    .features, .img-grid{
+    .features, .img-grid, .cards{
         display: flex;
         flex-direction: column;
     }
@@ -188,7 +216,7 @@ h1 .feat{
 /* Tablet Device Responsiveness */
 
 @media (768px < width <=1070px) {
-    .features{
+    .features, .cards{
         display: flex;
         flex-direction: column;
     }
